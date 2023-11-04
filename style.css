@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    /* border: 2px solid red; */
+}
+
+:root {
+    --violet: #673bb7;
+    --l1--grey: #d3d3d3;
+    --l2-grey: #a9a9a9;
+    --lbg-grey: #f0f0f0;
+    --dark--grey: #f0f0f0;
+    --circle-green: #81ff81;
+    --circle-blue: #16314c;
+    --circle-brown: #512508;
+}
+
+.tab1 {
+    background-color: var(--violet);
+    display: flex;
+    justify-content: space-between;
+    /* height: 5vh; */
+}
+
+.tab1 i {
+    background-color: #fe0000;
+    padding: 6px 5px;
+}
+
+.figures img {
+    width: 27px;
+    /* aspect-ratio: 1/1; */
+    height: 29px;
+}
+
+.tabHead {
+    background-color: var(--l1--grey);
+}
+
+.tabHead label {
+    text-align: start !important;
+}
+
+.tabHead h5 {
+    font-size: 15px;
+}
+
+.tabBtn {
+    padding: 5px 25px;
+    color: #fff;
+    background-color: #fe0000;
+}
+
+.tabindiv {
+    background-color: var(--l2-grey);
+
+}
+
+.dot1::before {
+    background-color: #01c000;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: .5px;
+    width: 10px;
+    content: "";
+    display: inline-block;
+}
+
+.dot2::before {
+    background-color:#16314c;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: .5px;
+    width: 10px;
+    content: "";
+    display: inline-block;
+}
+
+.dot3::before {
+    background-color:#512508;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: .5px;
+    width: 10px;
+    content: "";
+    display: inline-block;
+}
+
+.color2{
+  
+    width: 104px !important;
+    height: 104px !important;
+    border: 2px solid black;
+    border-radius: 70px;
+    font-size: 13px;
+}
+.color1 .contents{
+    background-color: var(--circle-green);
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 70px;
+    border: 3px solid rgb(255, 255, 255);
+    padding-top: 23px;
+
+
+}
+.color4{
+  
+    width: 104px !important;
+    height: 104px !important;
+    border: 2px solid var(--circle-blue);
+    border-radius: 70px;
+    font-size: 12px;
+}
+.color3 .contents{
+    background-color: #16314c;
+    width: 100px !important;
+    height: 100px !important;
+    color: #fff;
+    border-radius: 70px;
+    border: 1px solid rgb(255, 255, 255);
+    padding-top: 22px;
+
+
+}
+.color6{
+  
+    width: 104px !important;
+    height: 104px !important;
+    border: 2px solid var(--circle-brown);
+    border-radius: 70px;
+    font-size: 12px;
+}
+.color5 .contents{
+    background-color: #512508;
+    color: #fff;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 70px;
+    border: 1px solid rgb(255, 255, 255);
+    padding-top: 22px;
+}
+.zero{
+    width: 150px;
+    height: 40px;
+    margin-top: 35px;
+    background-color: var(--circle-green);
+    /* margin-left: 30px; */
+}
+.squarelist p::before{
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 23px;
+    background-color: #fe0000;
+    margin-bottom: -4.5px;
+    margin-right: 9px;
+}
+.sqin input{
+    width: 50px;
+}
+.sqin label{
+    margin-left: 30px;
+}
+.tabrow{
+   background-color: #a0a0a0 !important;
+
+    height: 100px !important;
+}
+
+
+@media screen and (max-width:576px){
+    .dotlist{
+        justify-content: center !important;
+    }
+    .color1 ,.color3 ,.color5 ,.zerocenter{
+        justify-content: center !important;
+        display: flex !important;
+    }
+    .sqin{
+     justify-content: center !important;
+     display: flex !important ;
+    }
+    .tabindiv{
+        text-align: center !important;
+    }
+    .buttoncenter{
+        text-align: center !important;
+        padding: 15px 0;
+    }
+    .tabHead{
+        text-align: center !important;
+    }
+    
+}
+@media screen and (max-width:992px){
+    .dotlist{
+        justify-content: center !important;
+    }
+    .color1 ,.color3 ,.color5 ,.zerocenter{
+        justify-content: center !important;
+        display: flex !important;
+    }
+    .sqin{
+     justify-content: center !important;
+     display: flex !important ;
+    }
+    .tabindiv{
+        text-align: center !important;
+    }
+    .buttoncenter{
+        text-align: center !important;
+        padding: 15px 0;
+    }
+    .tabHead{
+        text-align: center !important;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .zerocenter{
+        justify-content: center;
+        display: flex;
+    }
+    .sqin{
+        justify-content: center !important;
+        display: flex !important ;
+       }
+       .tabHead{
+        text-align: center !important;
+    }
+    .dotlist{
+        justify-content: center !important;
+    }
+    .buttoncenter{
+        text-align: center !important;
+        padding: 15px 0;
+    }
+}
